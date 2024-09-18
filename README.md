@@ -1,2 +1,2 @@
-# library
+# Library
 Book, paper, and notes

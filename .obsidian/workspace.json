@@ -11,7 +11,7 @@
             "id": "60c95eff1cc3d352",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -39,6 +39,14 @@
             }
           },
           {
+            "id": "34a67cd1d81536fb",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
             "id": "84900b1a0e64107c",
             "type": "leaf",
             "state": {
@@ -52,29 +60,13 @@
                 "sortOrder": "alphabetical"
               }
             }
-          },
-          {
-            "id": "b3327d89789749b4",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
-          },
-          {
-            "id": "6fb2c69385e60489",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 387.5
+    "width": 478.5
   },
   "right": {
     "id": "d67d8441c6f73be9",
@@ -140,19 +132,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
+      "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
       "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fb2c69385e60489",
+  "active": "60c95eff1cc3d352",
   "lastOpenFiles": [
     "Notes/The Physics of Intelligence.md",
     "README.md",
+    "Books and Papers/Astrophysics and Cosmology/Bayesian Methods in Cosmology.pdf",
+    "Books and Papers/Astrophysics and Cosmology/A Precise Distance Indicator Type IA Supernova Multicolor Light Curve Shapes.pdf",
     "Books and Papers/0 - Masters Points of Interest/Phase Transitions in Neural Networks - Liam Carroll.pdf",
     "Books and Papers/0 - Masters Points of Interest/Neural networks and physical systems with emergent collective computational.pdf",
     "Books and Papers/0 - Masters Points of Interest/Machine_Learning_Phases_of_Matter.pdf",
@@ -160,7 +155,6 @@
     "Books and Papers/0 - Masters Points of Interest/Entropy and Mutual Information.pdf",
     "Books and Papers/0 - Masters Points of Interest/Exact Solutions of a Deep Linear Network.pdf",
     "Books and Papers/1 - General Relativity/Carroll_GR.pdf",
-    "Books and Papers/1 - General Relativity/Einstein’s conversion from his static to an expanding universe.pdf",
-    "Books and Papers/1 - General Relativity/How to obtain the covariant form of Maxwell's equations from the continuity equation.pdf"
+    "Books and Papers/1 - General Relativity/Einstein’s conversion from his static to an expanding universe.pdf"
   ]
 }
