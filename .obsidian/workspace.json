@@ -18,23 +18,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "232d2a77135447fb",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "61500ea130849686",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": ".obsidian/plugins/text-extractor/cache/0a22d7af0c790a555deb87de0ef9d440.json",
-                "staged": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -169,7 +152,7 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "61500ea130849686",
+  "active": "34a67cd1d81536fb",
   "lastOpenFiles": [
     "Notes/Quantum Mechanical Model.md",
     "Notes/The Physics of Intelligence.md",
