@@ -4,15 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "fe1e18ce0043aeda",
+        "id": "e49eb8475adac343",
         "type": "tabs",
         "children": [
           {
-            "id": "60c95eff1cc3d352",
+            "id": "8013a9290f9106a3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "Books and Papers/Quantum Mechanics & Information/Ashok Das - Field Theory - A Path Integral Approach.pdf"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "232d2a77135447fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61500ea130849686",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": ".obsidian/plugins/text-extractor/cache/0a22d7af0c790a555deb87de0ef9d440.json",
+                "staged": false
+              }
             }
           }
         ]
@@ -59,6 +78,14 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "9d56f73475b1890b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
             }
           }
         ],
@@ -132,19 +159,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "60c95eff1cc3d352",
+  "active": "61500ea130849686",
   "lastOpenFiles": [
+    "Notes/Quantum Mechanical Model.md",
     "Notes/The Physics of Intelligence.md",
+    "Books and Papers/Quantum Mechanics & Information/Ashok Das - Field Theory - A Path Integral Approach.pdf",
     "README.md",
     "Books and Papers/Astrophysics and Cosmology/Bayesian Methods in Cosmology.pdf",
     "Books and Papers/Astrophysics and Cosmology/A Precise Distance Indicator Type IA Supernova Multicolor Light Curve Shapes.pdf",
@@ -154,7 +183,6 @@
     "Books and Papers/0 - Masters Points of Interest/Algebraic Geometry and Statistical Learning Theory.pdf",
     "Books and Papers/0 - Masters Points of Interest/Entropy and Mutual Information.pdf",
     "Books and Papers/0 - Masters Points of Interest/Exact Solutions of a Deep Linear Network.pdf",
-    "Books and Papers/1 - General Relativity/Carroll_GR.pdf",
-    "Books and Papers/1 - General Relativity/Einstein’s conversion from his static to an expanding universe.pdf"
+    "Books and Papers/1 - General Relativity/Carroll_GR.pdf"
   ]
 }
