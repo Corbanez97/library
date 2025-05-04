@@ -4,20 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "d8e565e7df4f4d0b",
+        "id": "14df8f3a31d4587e",
         "type": "tabs",
         "children": [
           {
-            "id": "e0d441159cf7da1d",
+            "id": "8e08a4137b76da49",
             "type": "leaf",
             "state": {
               "type": "diff-view",
               "state": {
-                "file": ".obsidian/plugins/text-extractor/cache/02fa894dddaa20b4b082baf8e6b261bf.json",
+                "file": ".obsidian/workspace.json",
                 "staged": false
               },
               "icon": "git-pull-request",
-              "title": "Diff View (02fa894dddaa20b4b082baf8e6b261bf.json)"
+              "title": "Diff View (workspace.json)"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 554.5
   },
   "right": {
     "id": "d67d8441c6f73be9",
@@ -179,29 +179,23 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e0d441159cf7da1d",
+  "active": "8e08a4137b76da49",
   "lastOpenFiles": [
+    "Notes/Probability - The Science of Uncertainty and Data/images/PFM_example.png",
+    "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L01E5.png",
+    "Notes/Probability - The Science of Uncertainty and Data/slides/L14.pdf",
+    "Notes/Probability - The Science of Uncertainty and Data/slides/L07.pdf",
+    "Notes/Quantum Mechanics I - Masters/Listas/Primeira Lista - Soluções.md",
+    "Notes/Quantum Mechanics I - Masters/Listas/Primeira lista de Quântica I-2025.pdf",
     "Notes/Quantum Mechanics I - Masters/0. Linear Algebra Review.md",
     "Notes/The Physics of Intelligence/The Physics of Intelligence.md",
     "Notes/The Physics of Intelligence",
-    "Books and Papers/Masters Points of Interest/Phase Transitions in Neural Networks - Liam Carroll.pdf",
-    "Books and Papers/Masters Points of Interest/Neural networks and physical systems with emergent collective computational.pdf",
-    "Books and Papers/Masters Points of Interest/Machine_Learning_Phases_of_Matter.pdf",
-    "Books and Papers/Masters Points of Interest/Lorenza Saitta, Attilio Giordana, Antoine Cornuéjols - Phase Transitions in Machine Learning-Cambridge University Press (2011).pdf",
-    "Books and Papers/Masters Points of Interest/Exact Solutions of a Deep Linear Network.pdf",
-    "Books and Papers/Masters Points of Interest/Exact Phase Transitions in Deep Learning.pdf",
-    "Books and Papers/Masters Points of Interest/Entropy and Mutual Information.pdf",
-    "Books and Papers/Masters Points of Interest/Algebraic Geometry and Statistical Learning Theory.pdf",
-    "Books and Papers/Masters Points of Interest/Phase Transitions in the Ising Model.pdf",
-    "Notes/Probability - The Science of Uncertainty and Data/7. Bayesian inference.md",
-    "Notes/Probability - The Science of Uncertainty and Data/9. Bernoulli and Poisson processes.md",
-    "Notes/Probability - The Science of Uncertainty and Data/A. Mathematical background overview.md",
-    "Notes/Probability - The Science of Uncertainty and Data/11. Metropolis-Hastings Algorithm.md",
-    "Notes/Probability - The Science of Uncertainty and Data/10. Markov chains.md",
-    "Notes/Probability - The Science of Uncertainty and Data/3. Counting.md",
-    "Notes/Probability - The Science of Uncertainty and Data/2. Conditioning and Independence.md",
-    "Notes/Probability - The Science of Uncertainty and Data/1. Probability models and axioms.md",
-    "Notes/Probability - The Science of Uncertainty and Data/0. Probability - Course Introduction.md",
+    "Notes/Quantum Mechanics I - Masters/Listas",
+    "Notes/Quantum Mechanics I - Masters",
+    "Notes/Probability - The Science of Uncertainty and Data/slides/L25.pdf",
+    "Notes/Probability - The Science of Uncertainty and Data/slides/L24.pdf",
+    "Notes/Probability - The Science of Uncertainty and Data/slides/L23.pdf",
+    "Notes/Probability - The Science of Uncertainty and Data/slides/L22.pdf",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L21E1S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L18E1S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L14E3S.png",
@@ -211,12 +205,21 @@
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L06E6S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E5S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E3S.png",
-    "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E1S.png",
+    "Notes/Probability - The Science of Uncertainty and Data/A. Mathematical background overview.md",
+    "Notes/Probability - The Science of Uncertainty and Data/9. Bernoulli and Poisson processes.md",
     "Notes/Probability - The Science of Uncertainty and Data/8. Limit theorems and classical statistics.md",
     "Notes/Probability - The Science of Uncertainty and Data/6. Further topics on random variables.md",
+    "Notes/Probability - The Science of Uncertainty and Data/7. Bayesian inference.md",
     "Notes/Probability - The Science of Uncertainty and Data/5. Continuous random variables.md",
     "Notes/Probability - The Science of Uncertainty and Data/4. Discrete random variables.md",
-    "README.md",
-    "Notes/Quantum Mechanical Model.md"
+    "Notes/Probability - The Science of Uncertainty and Data/3. Counting.md",
+    "Notes/Probability - The Science of Uncertainty and Data/2. Conditioning and Independence.md",
+    "Notes/Probability - The Science of Uncertainty and Data/11. Metropolis-Hastings Algorithm.md",
+    "Notes/Probability - The Science of Uncertainty and Data/10. Markov chains.md",
+    "Notes/Probability - The Science of Uncertainty and Data/1. Probability models and axioms.md",
+    "Notes/Probability - The Science of Uncertainty and Data/0. Probability - Course Introduction.md",
+    "Notes/Quantum Mechanical Model.md",
+    "Notes/The Physics of Intelligence.md",
+    "README.md"
   ]
 }
