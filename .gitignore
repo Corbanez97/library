@@ -163,4 +163,6 @@ cython_debug/
 
 # Obsidian files
 # Obsidian caches
-.obsidian/
+./.obsidian/
+.obsidian
+.obsidian/plugins/
