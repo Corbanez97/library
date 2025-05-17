@@ -266,24 +266,62 @@ $$
 
 Seja
 $$
-\bra{\phi}\hat{A}\ket{\psi} = \bra{\phi}\hat{A}^{\dagger}\ket{\psi}^*
+\braket{\phi|\hat{A}\psi} = \braket{\hat{A}^{\dagger} \phi|\psi}
 $$
-a definição do adjunto de um operador, se $\hat{A} = \hat{X}\hat{Y}$, temos
+a definição do adjunto de um operador. Se $\hat{A} = \hat{X}\hat{Y}$, temos
 $$
-\langle \phi | \hat{X} \hat{Y} | \psi \rangle = \left( \langle \psi | (\hat{X} \hat{Y})^\dagger | \phi \rangle \right)^*.
+\langle \phi | (\hat{X} \hat{Y}) \psi \rangle = \langle (\hat{X} \hat{Y})^{\dagger}\phi | \psi \rangle,
 $$
-Utilizando da associatividade dos elementos no lado esquerdo, vemos que
+ou, utilizando da associatividade dos elementos
 $$
-(\langle \phi | \hat{X})(\hat{Y} | \psi \rangle) = \left( \langle \psi | (\hat{X} \hat{Y})^\dagger | \phi \rangle \right)^*.
+\langle \phi | \hat{X}|\hat{Y} \psi \rangle = \langle \hat{X}^{\dagger}\phi | \hat{Y}\psi \rangle.
 $$
-Ademais, tomando o adjunto da expressão,
+Aplicando novamente a definição de adjunto
 $$
-(\langle \phi | \hat{X})^\dagger (\hat{Y} | \psi \rangle)^\dagger = \langle \psi | (\hat{X} \hat{Y})^\dagger | \phi \rangle,
+\langle \hat{X}^{\dagger}\phi| \hat{Y} | \psi \rangle = \langle \hat{Y}^{\dagger}\hat{X}^\dagger \phi | \psi \rangle.
 $$
-ou, ao aplicar a definição do adjunto no lado esquerdo novamente,
+Comparando com a expressão inicial, temos,
 $$
-\langle \psi | \hat{Y}^{\dagger} \cdot \hat{X}^\dagger | \phi \rangle = \langle \psi | (\hat{X} \hat{Y})^\dagger | \phi \rangle.
+\langle \hat{Y}^{\dagger}\hat{X}^\dagger \phi | \psi \rangle = \langle (\hat{X} \hat{Y})^\dagger\phi |  \psi \rangle.
 $$
 $$
 \therefore (\hat{X} \hat{Y})^\dagger = \hat{Y}^\dagger \hat{X}^\dagger
+$$
+
+# 3
+
+Seja  
+$$
+A = |\alpha\rangle\langle\beta|
+$$  
+um operador definido a partir de dois kets $|\alpha\rangle$ e  $|\beta\rangle$. Queremos obter os elementos de matriz de $A$ em uma base ortonormal $\{ | a_i\rangle \}$ . Pela definição de elemento de matriz de um operador nessa base, temos:
+
+$$
+A_{ij} = \langle a_i | A | a_j \rangle.
+$$
+
+Substituindo a forma explícita do operador $A = |\alpha\rangle\langle\beta|$, obtemos:
+
+$$
+A_{ij} = \langle a_i | \alpha \rangle \langle \beta | a_j \rangle.
+$$
+
+Como os componentes dos vetores $|\alpha\rangle$ e $|\beta\rangle$ na base $\{ |a_i\rangle \}$ são conhecidos, podemos defini-los como:
+
+$$
+\alpha_i = \langle a_i | \alpha \rangle, \quad \beta_i = \langle a_i | \beta \rangle.
+$$
+
+Logo, a expressão para os elementos de matriz fica:
+
+$$
+A_{ij} = \alpha_i \beta_j^*,
+$$
+
+onde utilizamos o fato de que $\langle \beta | a_j \rangle = \langle a_j | \beta \rangle^* = \beta_j^*$, pela propriedade de conjugação do produto interno.
+
+Portanto, a matriz $A$ pode ser escrita como o produto externo entre o vetor coluna $\vec{\alpha}$ e o vetor linha $\vec{\beta}^\dagger$:
+
+$$
+A = \vec{\alpha} \cdot \vec{\beta}^\dagger.
 $$
