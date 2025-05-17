@@ -318,10 +318,4 @@ $$
 A_{ij} = \alpha_i \beta_j^*,
 $$
 
-onde utilizamos o fato de que $\langle \beta | a_j \rangle = \langle a_j | \beta \rangle^* = \beta_j^*$, pela propriedade de conjugação do produto interno.
-
-Portanto, a matriz $A$ pode ser escrita como o produto externo entre o vetor coluna $\vec{\alpha}$ e o vetor linha $\vec{\beta}^\dagger$:
-
-$$
-A = \vec{\alpha} \cdot \vec{\beta}^\dagger.
-$$
+onde utilizamos o fato de que $\langle \beta | a_j \rangle = \langle a_j | \beta \rangle^\dagger = \beta_j^*$.
