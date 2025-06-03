@@ -1,4 +1,5 @@
-![[Primeira lista de Quântica I-2025.pdf]]
+![[Primeira Lista.pdf]] 
+ 
 ## 1.a)
 
 Sejam as matrizes $A$ e $B$,
