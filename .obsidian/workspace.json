@@ -4,59 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "d8067cb1ac4a9da5",
+        "id": "c06025bae09221ea",
         "type": "tabs",
         "children": [
           {
-            "id": "9c65bfd51c3da0d6",
+            "id": "5f41fce1ee2a1464",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "diff-view",
               "state": {
-                "file": "Notes/Quantum Mechanics I - Masters/Listas/Segunda Lista.pdf",
-                "page": 3,
-                "left": -13,
-                "top": 753,
-                "zoom": 1.1899509803921569
+                "file": ".obsidian/plugins/text-extractor/cache/0351f14d0722ffedde530737534fcb56.json",
+                "staged": false
               },
-              "icon": "lucide-file-text",
-              "title": "Segunda Lista"
-            }
-          },
-          {
-            "id": "35d9a97bcff63ae3",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Notes/Quantum Mechanics I - Masters/Listas/Primeira Lista.pdf",
-                "page": 1,
-                "left": -10,
-                "top": 500,
-                "zoom": 1.6262254901960784
-              },
-              "icon": "lucide-file-text",
-              "title": "Primeira Lista"
-            }
-          },
-          {
-            "id": "8b1005e05a0810d5",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Notes/Quantum Mechanics I - Masters/Listas/Terceira Lista.pdf",
-                "page": 1,
-                "left": -12,
-                "top": 796,
-                "zoom": 1.295343137254902
-              },
-              "icon": "lucide-file-text",
-              "title": "Terceira Lista"
+              "icon": "git-pull-request",
+              "title": "Diff View (0351f14d0722ffedde530737534fcb56.json)"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -124,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.50694274902344
+    "width": 252.50260543823242
   },
   "right": {
     "id": "d67d8441c6f73be9",
@@ -186,10 +150,22 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books and Papers/Thermodynamics & Statistical Mechanics/Quantização Canônica e Integração Funcional no Modelo Esférico Médio - Paula Fernanda Bienzobaz.pdf"
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Quantização Canônica e Integração Funcional no Modelo Esférico Médio - Paula Fernanda Bienzobaz"
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "e0465e8c5feae348",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -197,8 +173,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,28 +183,27 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "omnisearch:Omnisearch": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "34a67cd1d81536fb",
   "lastOpenFiles": [
-    "Notes/Quantum Mechanics I - Masters/Listas/Segunda Lista - Soluções.md",
+    "Notes/Quantum Mechanics I - Masters/Listas/Quarta Lista - Segunda Avaliação.pdf",
+    "Notes/Quantum Mechanics I - Masters/0. Linear Algebra Review.md",
+    "Notes/Projects/Pasted image 20250719154638.png",
+    "Notes/Projects/Business Rules - Oralsin Olinda.md",
     "Notes/Quantum Mechanics I - Masters/Listas/Terceira Lista.pdf",
-    "Notes/Quantum Mechanics I - Masters/Listas/Terceira lista de exercícios-Quantica I(pos)-2025-1.pdf",
+    "Notes/Projects",
     "Notes/Quantum Mechanics I - Masters/Listas/Segunda Lista.pdf",
     "Notes/Quantum Mechanics I - Masters/Listas/Primeira Lista.pdf",
+    "Notes/Quantum Mechanics I - Masters/Listas/Segunda Lista - Soluções.md",
+    "Notes/Quantum Mechanics I - Masters/Listas/Terceira lista de exercícios-Quantica I(pos)-2025-1.pdf",
     "Notes/Quantum Mechanics I - Masters/Listas/Primeira Lista - Soluções.md",
-    "Notes/Quantum Mechanics I - Masters/0. Linear Algebra Review.md",
     "Books and Papers/Masters Points of Interest/Phase Transitions in Large Language Models and the O(N) Model.pdf",
     "Books and Papers/Masters Points of Interest/Phase Transitions in Neural Networks - Liam Carroll.pdf",
     "Books and Papers/Masters Points of Interest/Fault-tolerant quantum computation by anyons.pdf",
     "Books and Papers/Masters Points of Interest/Fault-tolerant quantum computation by anyons.pdf.crdownload",
     "Books and Papers/Masters Points of Interest/Lorenza Saitta, Attilio Giordana, Antoine Cornuéjols - Phase Transitions in Machine Learning-Cambridge University Press (2011).pdf",
-    "Books and Papers/Masters Points of Interest/Machine_Learning_Phases_of_Matter.pdf",
     "Notes/Probability - The Science of Uncertainty and Data/3. Counting.md",
     "Notes/Probability - The Science of Uncertainty and Data/8. Limit theorems and classical statistics.md",
     "README.md",
@@ -251,7 +225,6 @@
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L06E6S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E5S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E3S.png",
-    "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E1S.png",
     "Notes/Probability - The Science of Uncertainty and Data/6. Further topics on random variables.md",
     "Notes/Probability - The Science of Uncertainty and Data/5. Continuous random variables.md",
     "Notes/Probability - The Science of Uncertainty and Data/4. Discrete random variables.md",
