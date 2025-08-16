@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Library HTML Generator
-Creates a static HTML file with download buttons for all books and papers
-"""
-
 import os
 import urllib.parse
 from pathlib import Path
@@ -226,7 +220,8 @@ def generate_html(files):
             <h1>📚 Library</h1>
             <p>Books and Papers Collection</p>
         </div>
-        
+"""
+    html_content += f"""
         <div class="stats">
             <h3>📊 Collection Statistics</h3>
             <p>Total Files: {len(files)} | Total Categories: {len(set(file_info['category'] for file_info in files))}</p>
@@ -306,7 +301,7 @@ def main():
     html_content = generate_html(files)
 
     # Write to file
-    output_file = "library_index.html"
+    output_file = "docs/index.html"
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(html_content)
 
