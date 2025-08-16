@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c06025bae09221ea",
+        "id": "0c1a0fae2bc64a1a",
         "type": "tabs",
         "children": [
           {
-            "id": "5f41fce1ee2a1464",
+            "id": "f524c8fa83c1518f",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": ".obsidian/plugins/text-extractor/cache/0351f14d0722ffedde530737534fcb56.json",
-                "staged": false
+                "file": "Notes/Probability - The Science of Uncertainty and Data/8. Limit theorems and classical statistics.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (0351f14d0722ffedde530737534fcb56.json)"
+              "icon": "lucide-file",
+              "title": "8. Limit theorems and classical statistics"
             }
           }
         ]
@@ -62,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "large numbers",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,11 +85,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 252.50260543823242
+    "width": 340.50694274902344
   },
   "right": {
     "id": "d67d8441c6f73be9",
@@ -150,12 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Notes/Quantum Mechanics I - Masters/Listas/Quarta Lista - Segunda Avaliação.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Quarta Lista - Segunda Avaliação"
             }
           },
           {
@@ -173,7 +175,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,8 +189,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "34a67cd1d81536fb",
+  "active": "84900b1a0e64107c",
   "lastOpenFiles": [
+    "Notes/Probability - The Science of Uncertainty and Data/5. Continuous random variables.md",
+    "Notes/Probability - The Science of Uncertainty and Data/1. Probability models and axioms.md",
+    "Notes/Probability - The Science of Uncertainty and Data/4. Discrete random variables.md",
+    "Books and Papers/Masters Points of Interest/Phase Transitions in Neural Networks - Liam Carroll.pdf",
+    "Books and Papers/Masters Points of Interest/Scaling Laws for Neural Language Models.pdf",
     "Notes/Quantum Mechanics I - Masters/Listas/Quarta Lista - Segunda Avaliação.pdf",
     "Notes/Quantum Mechanics I - Masters/0. Linear Algebra Review.md",
     "Notes/Projects/Pasted image 20250719154638.png",
@@ -200,10 +208,7 @@
     "Notes/Quantum Mechanics I - Masters/Listas/Terceira lista de exercícios-Quantica I(pos)-2025-1.pdf",
     "Notes/Quantum Mechanics I - Masters/Listas/Primeira Lista - Soluções.md",
     "Books and Papers/Masters Points of Interest/Phase Transitions in Large Language Models and the O(N) Model.pdf",
-    "Books and Papers/Masters Points of Interest/Phase Transitions in Neural Networks - Liam Carroll.pdf",
     "Books and Papers/Masters Points of Interest/Fault-tolerant quantum computation by anyons.pdf",
-    "Books and Papers/Masters Points of Interest/Fault-tolerant quantum computation by anyons.pdf.crdownload",
-    "Books and Papers/Masters Points of Interest/Lorenza Saitta, Attilio Giordana, Antoine Cornuéjols - Phase Transitions in Machine Learning-Cambridge University Press (2011).pdf",
     "Notes/Probability - The Science of Uncertainty and Data/3. Counting.md",
     "Notes/Probability - The Science of Uncertainty and Data/8. Limit theorems and classical statistics.md",
     "README.md",
@@ -215,7 +220,6 @@
     "Notes/Probability - The Science of Uncertainty and Data/11. Metropolis-Hastings Algorithm.md",
     "Notes/Probability - The Science of Uncertainty and Data/10. Markov chains.md",
     "Notes/Probability - The Science of Uncertainty and Data/2. Conditioning and Independence.md",
-    "Notes/Probability - The Science of Uncertainty and Data/1. Probability models and axioms.md",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L21E1S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L18E1S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L14E3S.png",
@@ -226,8 +230,6 @@
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E5S.png",
     "Notes/Probability - The Science of Uncertainty and Data/images/exercises/L05E3S.png",
     "Notes/Probability - The Science of Uncertainty and Data/6. Further topics on random variables.md",
-    "Notes/Probability - The Science of Uncertainty and Data/5. Continuous random variables.md",
-    "Notes/Probability - The Science of Uncertainty and Data/4. Discrete random variables.md",
     "Notes/Quantum Mechanical Model.md"
   ]
 }

@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Books and Papers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .stats h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .category {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .category-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .files-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        
+        .file-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #e1e5e9;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .file-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+        
+        .file-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+        
+        .file-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+            color: #7f8c8d;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .files-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Library</h1>
+            <p>Books and Papers Collection</p>
+        </div>
+        
+        <div class="stats">
+            <h3>📊 Collection Statistics</h3>
+            <p>Total Files: {len(files)} | Total Categories: {len(set(file_info['category'] for file_info in files))}</p>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Astrophysics and Cosmology
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">A Precise Distance Indicator Type IA Supernova Multicolor Light Curve Shapes.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 742.9 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/A%20Precise%20Distance%20Indicator%20Type%20IA%20Supernova%20Multicolor%20Light%20Curve%20Shapes.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Analysis of LIght Curves of Type Ia Supernovae - Gertrud Contardo.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 5.0 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Analysis%20of%20LIght%20Curves%20of%20Type%20Ia%20Supernovae%20-%20Gertrud%20Contardo.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Bayesian Methods in Cosmology.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.3 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Bayesian%20Methods%20in%20Cosmology.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">BBVA-OpenMind-Martin-Rees-The-Past-Decade-and-the-Future-of-Cosmology-and-Astrophysics.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.1 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/BBVA-OpenMind-Martin-Rees-The-Past-Decade-and-the-Future-of-Cosmology-and-Astrophysics.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Berkeley Supernova Ia Program Data Release of 637 Spectra from 247 Type Ia Supernovae.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.1 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Berkeley%20Supernova%20Ia%20Program%20Data%20Release%20of%20637%20Spectra%20from%20247%20Type%20Ia%20Supernovae.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Classification of Supernovae_Massimo Turatto.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 425.5 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Classification%20of%20Supernovae_Massimo%20Turatto.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">De nova et nvllivs aevi memoria privs visa Stella - Tychonis Brahe.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 4.0 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/De%20nova%20et%20nvllivs%20aevi%20memoria%20privs%20visa%20Stella%20-%20Tychonis%20Brahe.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Dissertação_Mestrado_UEL_Final_Sanderson_Carlos_Ribeiro.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.9 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Disserta%C3%A7%C3%A3o_Mestrado_UEL_Final_Sanderson_Carlos_Ribeiro.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Einstein's conversion from his static to an expanding universe.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 763.9 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Einstein%27s%20conversion%20from%20his%20static%20to%20an%20expanding%20universe.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Friedmann Equations.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 246.0 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Friedmann%20Equations.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Gravitational N-Body Simulations_ Tools an - Aarseth, Sverre J_.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.9 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Gravitational%20N-Body%20Simulations_%20Tools%20an%20-%20Aarseth%2C%20Sverre%20J_.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">newtonian universe.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.2 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/newtonian%20universe.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">O universo estatico de Einstein.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 97.9 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/O%20universo%20estatico%20de%20Einstein.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">On Super Novae - Baade and Zwicky (1934).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 565.4 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/On%20Super%20Novae%20-%20Baade%20and%20Zwicky%20%281934%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">On the curvature of space - Mr A Friedmann.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 136.4 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/On%20the%20curvature%20of%20space%20-%20Mr%20A%20Friedmann.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Robertson_Walker_Metric.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 889.1 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Robertson_Walker_Metric.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Scott Dodelson, Fabian Schmidt - Modern Cosmology-Academic Press (2020).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 19.0 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Scott%20Dodelson%2C%20Fabian%20Schmidt%20-%20Modern%20Cosmology-Academic%20Press%20%282020%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Standard Photometric Systems.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 583.4 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Standard%20Photometric%20Systems.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Standardization of type Ia supernovae - Rodrigo C B Coelho.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 11.0 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Standardization%20of%20type%20Ia%20supernovae%20-%20Rodrigo%20C%20B%20Coelho.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Supernova 1572 and other newly observed stars in the literature of the time.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.1 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Supernova%201572%20and%20other%20newly%20observed%20stars%20in%20the%20literature%20of%20the%20time.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Supernovae, Dark Energy, and the Accelerating Universe_Saul Perlmutter.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 473.5 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Supernovae%2C%20Dark%20Energy%2C%20and%20the%20Accelerating%20Universe_Saul%20Perlmutter.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">TCC_Lucas_Corbanez.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 324.2 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/TCC_Lucas_Corbanez.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Absolute Magnitudes of Type Ia Supernovae.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 95.3 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/The%20Absolute%20Magnitudes%20of%20Type%20Ia%20Supernovae.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Carnegie Supernova Project.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.0 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/The%20Carnegie%20Supernova%20Project.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The evolution of cosmologies - Oliver L Reiser.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 689.5 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/The%20evolution%20of%20cosmologies%20-%20Oliver%20L%20Reiser.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Pantheon Analysis The Full Dataset and Light-Curve Release.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.0 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/The%20Pantheon%20Analysis%20The%20Full%20Dataset%20and%20Light-Curve%20Release.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Scientific Papers of Sir William Huggins.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 31.2 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/The%20Scientific%20Papers%20of%20Sir%20William%20Huggins.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Supernova Legacy Survey.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 475.2 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/The%20Supernova%20Legacy%20Survey.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Type Ia supernovae, standardisable candles, and gravity.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 567.6 KB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Type%20Ia%20supernovae%2C%20standardisable%20candles%2C%20and%20gravity.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Viatcheslav Mukhanov - Physical foundations of cosmology-Cambridge University Press (2005).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.3 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/Viatcheslav%20Mukhanov%20-%20Physical%20foundations%20of%20cosmology-Cambridge%20University%20Press%20%282005%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">William Sheehan - The Planet Mars_ A History of Observation and Discovery-University of Arizona Press (1996) (1).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 81.5 MB</span>
+                        <span>📂 Books and Papers\Astrophysics and Cosmology</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Astrophysics%20and%20Cosmology/William%20Sheehan%20-%20The%20Planet%20Mars_%20A%20History%20of%20Observation%20and%20Discovery-University%20of%20Arizona%20Press%20%281996%29%20%281%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Classical Mechanics
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">Moyses Nussenzveig - Curso de Física Básica_ Mecânica - Vol. 1-Edgard Blucher (2002).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 17.1 MB</span>
+                        <span>📂 Books and Papers\Classical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Classical%20Mechanics/Moyses%20Nussenzveig%20-%20Curso%20de%20F%C3%ADsica%20B%C3%A1sica_%20Mec%C3%A2nica%20-%20Vol.%201-Edgard%20Blucher%20%282002%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Consciousness
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">Consciousness as a State of Matter.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 6.4 MB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/Consciousness%20as%20a%20State%20of%20Matter.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">From the phenomenology to the mechanisms of consciousness - Integrated Information Theory.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.4 MB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/From%20the%20phenomenology%20to%20the%20mechanisms%20of%20consciousness%20-%20Integrated%20Information%20Theory.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Integrated information in the thermodynamic limit.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 668.9 KB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/Integrated%20information%20in%20the%20thermodynamic%20limit.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Integrated information theory - from consciousness to its physical substrate.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 805.5 KB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/Integrated%20information%20theory%20-%20from%20consciousness%20to%20its%20physical%20substrate.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Roger-Penrose-Martin-Gardner-The-Emperor’s-New-Mind-Concerning-Computers_.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 12.4 MB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/Roger-Penrose-Martin-Gardner-The-Emperor%E2%80%99s-New-Mind-Concerning-Computers_.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">SethBayne_NRN_accepted.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.2 MB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/SethBayne_NRN_accepted.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Emergence of Integrated Information, Complexity, and ‘Consciousness’ at Criticality.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 762.5 KB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/The%20Emergence%20of%20Integrated%20Information%2C%20Complexity%2C%20and%20%E2%80%98Consciousness%E2%80%99%20at%20Criticality.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Integrated Information Theory of Consciousness as Pseudoscience.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 160.5 KB</span>
+                        <span>📂 Books and Papers\Consciousness</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Consciousness/The%20Integrated%20Information%20Theory%20of%20Consciousness%20as%20Pseudoscience.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Data and Programming
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">Applied Data Science - Langmore & Krasner.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.4 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Applied%20Data%20Science%20-%20Langmore%20%26%20Krasner.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Asif Abbasi - AWS Certified Data Analytics Study Guide_ Specialty (DAS-C01) Exam-Sybex (2020).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 8.4 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Asif%20Abbasi%20-%20AWS%20Certified%20Data%20Analytics%20Study%20Guide_%20Specialty%20%28DAS-C01%29%20Exam-Sybex%20%282020%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Attention is all you need.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.1 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Attention%20is%20all%20you%20need.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">C Programming Language.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 20.3 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/C%20Programming%20Language.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Chris Fregly, Antje Barth - Data Science on AWS_ Implementing End-to-End, Continuous AI and Machine Learning Pipeline.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 26.8 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Chris%20Fregly%2C%20Antje%20Barth%20-%20Data%20Science%20on%20AWS_%20Implementing%20End-to-End%2C%20Continuous%20AI%20and%20Machine%20Learning%20Pipeline.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">cos similarity.PDF</div>
+                    <div class="file-meta">
+                        <span>📏 301.5 KB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/cos%20similarity.PDF" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Cyclic Neural Networks.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 976.4 KB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Cyclic%20Neural%20Networks.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">fundamentals-of-data-engineering.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.6 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/fundamentals-of-data-engineering.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Learn C the Hard Way.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 23.7 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Learn%20C%20the%20Hard%20Way.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">LLaMa - Open and Efficient Foundation Language Models.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 709.5 KB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/LLaMa%20-%20Open%20and%20Efficient%20Foundation%20Language%20Models.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">O Reilly - Practical C Programming, 3rd Edition.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 5.9 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/O%20Reilly%20-%20Practical%20C%20Programming%2C%203rd%20Edition.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">oreilly-delta-lake_-up-and-running.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.3 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/oreilly-delta-lake_-up-and-running.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Python Crash Course - A Hands-On Project-Based Introduction to Programming.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 5.4 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Python%20Crash%20Course%20-%20A%20Hands-On%20Project-Based%20Introduction%20to%20Programming.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">SDEDIT - GUIDED IMAGE SYNTHESIS AND EDITING WITH STOCHASTIC DIFFERENTIAL EQUATIONS.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 11.8 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/SDEDIT%20-%20GUIDED%20IMAGE%20SYNTHESIS%20AND%20EDITING%20WITH%20STOCHASTIC%20DIFFERENTIAL%20EQUATIONS.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Data Warehouse Toolkit.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 4.5 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/The%20Data%20Warehouse%20Toolkit.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Understanding Machine Learning - From Theory to Algorithms.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.5 MB</span>
+                        <span>📂 Books and Papers\Data and Programming</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Data%20and%20Programming/Understanding%20Machine%20Learning%20-%20From%20Theory%20to%20Algorithms.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Eletrodynamics
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">David Griffiths - Introduction to Electrodynamics.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 13.9 MB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/David%20Griffiths%20-%20Introduction%20to%20Electrodynamics.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">David J. Griffiths - Introduction to Electrodynamics — Instructor's Solutions Manual (1999) (1).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 8.8 MB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/David%20J.%20Griffiths%20-%20Introduction%20to%20Electrodynamics%20%E2%80%94%20Instructor%27s%20Solutions%20Manual%20%281999%29%20%281%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Jakob Schwichtenberg - No-Nonsense Electrodynamics_ A Student Friendly Introduction-No-nonsense Books.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 10.0 MB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/Jakob%20Schwichtenberg%20-%20No-Nonsense%20Electrodynamics_%20A%20Student%20Friendly%20Introduction-No-nonsense%20Books.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">KLEBER DAUM MACHADO - TEORIA DO ELETROMAGNETISMO, Volume 1  -UEPG (2000).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 41.5 MB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/KLEBER%20DAUM%20MACHADO%20-%20TEORIA%20DO%20ELETROMAGNETISMO%2C%20Volume%201%20%20-UEPG%20%282000%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">KLEBER DAUM MACHADO - TEORIA DO ELETROMAGNETISMO, Volume 2  -UEPG (2003).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 41.4 MB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/KLEBER%20DAUM%20MACHADO%20-%20TEORIA%20DO%20ELETROMAGNETISMO%2C%20Volume%202%20%20-UEPG%20%282003%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">KLEBER DAUM MACHADO - TEORIA DO ELETROMAGNETISMO, Volume 3  -UEPG (2006).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 44.5 MB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/KLEBER%20DAUM%20MACHADO%20-%20TEORIA%20DO%20ELETROMAGNETISMO%2C%20Volume%203%20%20-UEPG%20%282006%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Solved Exercises in Eletromagnetism.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 995.9 KB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/Solved%20Exercises%20in%20Eletromagnetism.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Why is Maxwell's Theory so hard to understand.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 89.8 KB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/Why%20is%20Maxwell%27s%20Theory%20so%20hard%20to%20understand.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Zangwill A - Modern electrodynamics-Cambridge University Press (2013).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.3 MB</span>
+                        <span>📂 Books and Papers\Eletrodynamics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Eletrodynamics/Zangwill%20A%20-%20Modern%20electrodynamics-Cambridge%20University%20Press%20%282013%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\General Relativity
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">Carroll_GR.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 30.4 MB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/Carroll_GR.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Einstein’s conversion from his static to an expanding universe.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 763.9 KB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/Einstein%E2%80%99s%20conversion%20from%20his%20static%20to%20an%20expanding%20universe.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Geodesic DGGS.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.2 MB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/Geodesic%20DGGS.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">How to obtain the covariant form of Maxwell's equations from the continuity equation.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 128.7 KB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/How%20to%20obtain%20the%20covariant%20form%20of%20Maxwell%27s%20equations%20from%20the%20continuity%20equation.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Lorentz, Einstein, Minkowski, Sommerfeld, Weyl - The Principle Of Relativity_ A Collection Of Origina.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 13.6 MB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/Lorentz%2C%20Einstein%2C%20Minkowski%2C%20Sommerfeld%2C%20Weyl%20-%20The%20Principle%20Of%20Relativity_%20A%20Collection%20Of%20Origina.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Maximally_Symmetric_Spaces.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 301.9 KB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/Maximally_Symmetric_Spaces.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Modern Differential Geometry for Physicists 2nd ed., - C. Isham.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 14.9 MB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/Modern%20Differential%20Geometry%20for%20Physicists%202nd%20ed.%2C%20-%20C.%20Isham.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Schutz_GR.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.1 MB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/Schutz_GR.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Principle of Relativity - Saha.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 11.2 MB</span>
+                        <span>📂 Books and Papers\General Relativity</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/General%20Relativity/The%20Principle%20of%20Relativity%20-%20Saha.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Masters Points of Interest
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">Algebraic Geometry and Statistical Learning Theory.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.6 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Algebraic%20Geometry%20and%20Statistical%20Learning%20Theory.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Entropy and Mutual Information.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 169.4 KB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Entropy%20and%20Mutual%20Information.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Exact Phase Transitions in Deep Learning.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.3 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Exact%20Phase%20Transitions%20in%20Deep%20Learning.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Exact Solutions of a Deep Linear Network.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.0 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Exact%20Solutions%20of%20a%20Deep%20Linear%20Network.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Fault-tolerant quantum computation by anyons.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 322.7 KB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Fault-tolerant%20quantum%20computation%20by%20anyons.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Lorenza Saitta, Attilio Giordana, Antoine Cornuéjols - Phase Transitions in Machine Learning-Cambridge University Press (2011).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.8 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Lorenza%20Saitta%2C%20Attilio%20Giordana%2C%20Antoine%20Cornu%C3%A9jols%20-%20Phase%20Transitions%20in%20Machine%20Learning-Cambridge%20University%20Press%20%282011%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Machine_Learning_Phases_of_Matter.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 433.5 KB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Machine_Learning_Phases_of_Matter.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Mathematics of Neural Networks.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.1 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Mathematics%20of%20Neural%20Networks.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Neural networks and physical systems with emergent collective computational.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1009.4 KB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Neural%20networks%20and%20physical%20systems%20with%20emergent%20collective%20computational.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Phase Transitions in Large Language Models and the O(N) Model.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 692.5 KB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Phase%20Transitions%20in%20Large%20Language%20Models%20and%20the%20O%28N%29%20Model.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Phase Transitions in Neural Networks - Liam Carroll.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 8.7 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Phase%20Transitions%20in%20Neural%20Networks%20-%20Liam%20Carroll.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Phase Transitions in the Ising Model.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 520.5 KB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Phase%20Transitions%20in%20the%20Ising%20Model.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Scaling Laws for Neural Language Models.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.4 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Scaling%20Laws%20for%20Neural%20Language%20Models.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Perceptron - A Probabilistic Model for Information Storage and Organization in the Brain - Rosenblatt1958.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.6 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/The%20Perceptron%20-%20A%20Probabilistic%20Model%20for%20Information%20Storage%20and%20Organization%20in%20the%20Brain%20-%20Rosenblatt1958.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Quantum Hall Effect.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.8 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/The%20Quantum%20Hall%20Effect.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Topological phase transitions in functional brain networks.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.9 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Topological%20phase%20transitions%20in%20functional%20brain%20networks.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Universality of Scaling - Utkarsh Sharma.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 6.5 MB</span>
+                        <span>📂 Books and Papers\Masters Points of Interest</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Masters%20Points%20of%20Interest/Universality%20of%20Scaling%20-%20Utkarsh%20Sharma.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Mathematics
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">George B. Arfken - Mathematical Methods for Physicists.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 10.2 MB</span>
+                        <span>📂 Books and Papers\Mathematics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Mathematics/George%20B.%20Arfken%20-%20Mathematical%20Methods%20for%20Physicists.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">George B. Arfken, Hans J. Weber, Frank E. Harris - Mathematical Methods for Physicists - Solutions-Elsevier (2013).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.5 MB</span>
+                        <span>📂 Books and Papers\Mathematics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Mathematics/George%20B.%20Arfken%2C%20Hans%20J.%20Weber%2C%20Frank%20E.%20Harris%20-%20Mathematical%20Methods%20for%20Physicists%20-%20Solutions-Elsevier%20%282013%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Optics
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">Eyeglasses-free_display_towards_correcting_visual_.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 23.4 MB</span>
+                        <span>📂 Books and Papers\Optics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Optics/Eyeglasses-free_display_towards_correcting_visual_.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">ismar-2018-focusar_cam_ready_compressed.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.0 MB</span>
+                        <span>📂 Books and Papers\Optics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Optics/ismar-2018-focusar_cam_ready_compressed.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">lombardo2010.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 620.4 KB</span>
+                        <span>📂 Books and Papers\Optics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Optics/lombardo2010.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">niessner2012eyeglass.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 863.1 KB</span>
+                        <span>📂 Books and Papers\Optics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Optics/niessner2012eyeglass.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Probability and Statistics
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">(Duxbury Advanced) John A. Rice - Mathematical Statistics and Data Analysis 3ed (Duxbury Advanced)  -Duxbury Press (2006).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 4.8 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/%28Duxbury%20Advanced%29%20John%20A.%20Rice%20-%20Mathematical%20Statistics%20and%20Data%20Analysis%203ed%20%28Duxbury%20Advanced%29%20%20-Duxbury%20Press%20%282006%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">(Manchester Physics Series) R. J. Barlow - Statistics_ A Guide and Reference to the Use of Statistical Methods in the Physical Sciences-Wiley (1993).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 28.8 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/%28Manchester%20Physics%20Series%29%20R.%20J.%20Barlow%20-%20Statistics_%20A%20Guide%20and%20Reference%20to%20the%20Use%20of%20Statistical%20Methods%20in%20the%20Physical%20Sciences-Wiley%20%281993%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">An epidemiological approach to model the viral propagation of memes.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 406.1 KB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/An%20epidemiological%20approach%20to%20model%20the%20viral%20propagation%20of%20memes.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">An intoduction to statistical learning.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 19.1 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/An%20intoduction%20to%20statistical%20learning.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Bayesian Data Analysis.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 61.7 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Bayesian%20Data%20Analysis.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Bayesian_Networks_for_Probabilistic_Weather_Predic.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 346.7 KB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Bayesian_Networks_for_Probabilistic_Weather_Predic.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">David Williams - Weighing the Odds_ A Course in Probability and Statistics  -Cambridge University Press (2001).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.7 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/David%20Williams%20-%20Weighing%20the%20Odds_%20A%20Course%20in%20Probability%20and%20Statistics%20%20-Cambridge%20University%20Press%20%282001%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Dimitri P. Bertsekas, John N. Tsitsiklis - Introduction to Probability, 2nd Edition  - Short Version.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 294.0 KB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Dimitri%20P.%20Bertsekas%2C%20John%20N.%20Tsitsiklis%20-%20Introduction%20to%20Probability%2C%202nd%20Edition%20%20-%20Short%20Version.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Dimitri P. Bertsekas, John N. Tsitsiklis - Introduction to Probability, 2nd Edition  -Athena Scientific (2008).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 17.4 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Dimitri%20P.%20Bertsekas%2C%20John%20N.%20Tsitsiklis%20-%20Introduction%20to%20Probability%2C%202nd%20Edition%20%20-Athena%20Scientific%20%282008%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">João - ESTATÍSTICA BAYESIANA APLICADA EM COSMOLOGIA.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.2 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Jo%C3%A3o%20-%20ESTAT%C3%8DSTICA%20BAYESIANA%20APLICADA%20EM%20COSMOLOGIA.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Probability and Statistics by J L Doob.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.2 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Probability%20and%20Statistics%20by%20J%20L%20Doob.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Quantitative Investment Analysis Workbook.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.8 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Quantitative%20Investment%20Analysis%20Workbook.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Quantitative Investment Analysis.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 22.4 MB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/Quantitative%20Investment%20Analysis.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Large-Sample Distribution of the Likelihood Ratio for Testing Composite Hypotheses.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 229.5 KB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/The%20Large-Sample%20Distribution%20of%20the%20Likelihood%20Ratio%20for%20Testing%20Composite%20Hypotheses.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">VARIETIES OF BAYESIANISM.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 450.7 KB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/VARIETIES%20OF%20BAYESIANISM.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">XGBoost - A Scalable Tree Boosting System.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 922.6 KB</span>
+                        <span>📂 Books and Papers\Probability and Statistics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Probability%20and%20Statistics/XGBoost%20-%20A%20Scalable%20Tree%20Boosting%20System.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Quantum Mechanics & Information
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">An Introduction to Quantum Computing.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 453.5 KB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/An%20Introduction%20to%20Quantum%20Computing.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Ashok Das - Field Theory - A Path Integral Approach.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 4.5 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Ashok%20Das%20-%20Field%20Theory%20-%20A%20Path%20Integral%20Approach.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Blockchain - Research and Applications.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.7 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Blockchain%20-%20Research%20and%20Applications.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Classical Field Theory.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 267.6 KB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Classical%20Field%20Theory.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Collin P. Williams - Explorations in Quantum Computing.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 23.4 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Collin%20P.%20Williams%20-%20Explorations%20in%20Quantum%20Computing.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Guilherme_Delfino_thesis.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.4 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Guilherme_Delfino_thesis.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Introduction to Quantum Information - Barnett.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 498.4 KB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Introduction%20to%20Quantum%20Information%20-%20Barnett.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Jakob Schwichtenberg - No-Nonsense Quantum Field Theory_ A Student-Friendly Introduction-No-Nonsense Books (2020).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 83.7 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Jakob%20Schwichtenberg%20-%20No-Nonsense%20Quantum%20Field%20Theory_%20A%20Student-Friendly%20Introduction-No-Nonsense%20Books%20%282020%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Jakob Schwichtenberg - No-Nonsense Quantum Mechanics_ A Student-Friendly Introduction, Second Edition-No-Nonsense Books (2018).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.8 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Jakob%20Schwichtenberg%20-%20No-Nonsense%20Quantum%20Mechanics_%20A%20Student-Friendly%20Introduction%2C%20Second%20Edition-No-Nonsense%20Books%20%282018%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Jakob Schwichtenberg - Physics from Symmetry-Springer (2018).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.7 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Jakob%20Schwichtenberg%20-%20Physics%20from%20Symmetry-Springer%20%282018%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Kitaev.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 311.6 KB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Kitaev.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Michael A. Nielsen, Isaac L. Chuang - Quantum Computation and Quantum Information_ 10th Anniversary Edition-Cambridge University Press (2011).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 6.6 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Michael%20A.%20Nielsen%2C%20Isaac%20L.%20Chuang%20-%20Quantum%20Computation%20and%20Quantum%20Information_%2010th%20Anniversary%20Edition-Cambridge%20University%20Press%20%282011%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">produtividade_2023_Bienzobas.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 488.7 KB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/produtividade_2023_Bienzobas.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Quantum Computation and Quantum Information - Nielsen Chuang.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 7.4 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Quantum%20Computation%20and%20Quantum%20Information%20-%20Nielsen%20Chuang.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Quantum Spin Liquids.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.1 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Quantum%20Spin%20Liquids.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Ramamurti Shankar - Principles of Quantum Mechanics-Springer (2011).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 30.4 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Ramamurti%20Shankar%20-%20Principles%20of%20Quantum%20Mechanics-Springer%20%282011%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Szilard-1929.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 788.3 KB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Szilard-1929.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">The Quantum Hall Effect.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.8 MB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/The%20Quantum%20Hall%20Effect.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Topological multicritical point in the Toric Code and 3D gauge Higgs Models.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 162.9 KB</span>
+                        <span>📂 Books and Papers\Quantum Mechanics & Information</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Quantum%20Mechanics%20%26%20Information/Topological%20multicritical%20point%20in%20the%20Toric%20Code%20and%203D%20gauge%20Higgs%20Models.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                📁 Books and Papers\Thermodynamics & Statistical Mechanics
+            </div>
+            <div class="files-grid">
+
+                <div class="file-item">
+                    <div class="file-name">A.Muramatsu_1.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 110.8 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/A.Muramatsu_1.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">A.Muramatsu_2.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 111.0 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/A.Muramatsu_2.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">A.Muramatsu_3.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 129.6 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/A.Muramatsu_3.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">An Introduction to Atmospheric Thermodynamics.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.2 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/An%20Introduction%20to%20Atmospheric%20Thermodynamics.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Atmospheric Thermodynamics 1.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1.5 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Atmospheric%20Thermodynamics%201.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Daniel J. Amit, Yosef Verbin, Rami Tzafriri - Statistical physics_ an introductory course-World Scientific Publishing Company (1999).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.4 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Daniel%20J.%20Amit%2C%20Yosef%20Verbin%2C%20Rami%20Tzafriri%20-%20Statistical%20physics_%20an%20introductory%20course-World%20Scientific%20Publishing%20Company%20%281999%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Entropy - From Thermodynamics to Information Processing.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.1 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Entropy%20-%20From%20Thermodynamics%20to%20Information%20Processing.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Hidetoshi Nishimori, Gerardo Ortiz - Elements of Phase Transitions and Critical Phenomena.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 3.1 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Hidetoshi%20Nishimori%2C%20Gerardo%20Ortiz%20-%20Elements%20of%20Phase%20Transitions%20and%20Critical%20Phenomena.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Markov Chain Models in Statistical Mechanics.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 229.5 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Markov%20Chain%20Models%20in%20Statistical%20Mechanics.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Modelo Esférico Quântico Elementar - Bienzobaz, Salinas.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 222.8 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Modelo%20Esf%C3%A9rico%20Qu%C3%A2ntico%20Elementar%20-%20Bienzobaz%2C%20Salinas.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Neural networks and physical systems with emergent collective computational.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 1009.4 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Neural%20networks%20and%20physical%20systems%20with%20emergent%20collective%20computational.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Quantização Canônica e Integração Funcional no Modelo Esférico Médio - Paula Fernanda Bienzobaz.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 831.8 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Quantiza%C3%A7%C3%A3o%20Can%C3%B4nica%20e%20Integra%C3%A7%C3%A3o%20Funcional%20no%20Modelo%20Esf%C3%A9rico%20M%C3%A9dio%20-%20Paula%20Fernanda%20Bienzobaz.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Rigorous learning curve bounds from statistical mechanics.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 2.2 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Rigorous%20learning%20curve%20bounds%20from%20statistical%20mechanics.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Silvio Salinas - Introdução à Física Estatística-Edusp (2008).pdf</div>
+                    <div class="file-meta">
+                        <span>📏 12.6 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Silvio%20Salinas%20-%20Introdu%C3%A7%C3%A3o%20%C3%A0%20F%C3%ADsica%20Estat%C3%ADstica-Edusp%20%282008%29.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">TherML - The Termodynamics of Machine Learning.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 831.3 KB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/TherML%20-%20The%20Termodynamics%20of%20Machine%20Learning.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+                <div class="file-item">
+                    <div class="file-name">Thermodynamics - Fermi.pdf</div>
+                    <div class="file-meta">
+                        <span>📏 5.1 MB</span>
+                        <span>📂 Books and Papers\Thermodynamics & Statistical Mechanics</span>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/Corbanez97/library/main/Books%20and%20Papers/Thermodynamics%20%26%20Statistical%20Mechanics/Thermodynamics%20-%20Fermi.pdf" class="download-btn" download>
+                        ⬇️ Download PDF
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generated on Windows</p>
+            <p>Total files: 148</p>
+        </div>
+    </div>
+</body>
+</html>
